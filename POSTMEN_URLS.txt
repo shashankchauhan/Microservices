@@ -1,0 +1,60 @@
+UserService
+
+CreateUser 
+POST :- http://localhost:8080/users
+
+BODY-RAW-JSON
+{
+    "name":"Radhika",
+    "email":"radhikadarji926@gmail.com",
+    "about":"accountant"
+}
+
+GetUser
+
+GET:- http://localhost:8080/users/6a06fb80-ceea-4ae0-b204-61e0b8694a3b
+
+---------------------------------------------------------------------
+HotelService
+
+CreateHotel
+Post:- http://localhost:8081/hotels
+
+BODY-RAW-JSON
+{
+    "name":"ITC",
+    "location":"Ahmedabad",
+    "about":"FiveStar"
+}
+
+Get Hotels 
+
+Get:- http://localhost:8081/hotels/
+
+---------------------------------------------------------------------
+
+Rating Service 
+
+Create Rating 
+
+POST:- http://localhost:8082/ratings 
+
+BODY-RAW-JSON
+{
+    "rating":5,
+    "feedback":"five star",
+    "userId":"6a06fb80-ceea-4ae0-b204-61e0b8694a3b",
+    "hotelId":"030cac35-086b-415a-9600-39c0753f2d45"
+
+}
+
+Get Rating 
+
+GET:- http://localhost:8082/ratings/users/58dc45dc-e72e-4b33-bc4f-a2a62d2a511c 
+
+
+---------------------------------------------------------------------
+
+APIgateway 
+
+GET :- http://localhost:8083/users/1fd21699-e927-4ba2-a67a-35a99c1e9e79 
